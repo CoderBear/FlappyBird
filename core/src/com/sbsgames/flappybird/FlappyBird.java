@@ -6,12 +6,12 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class FlappyBird extends ApplicationAdapter {
-	SpriteBatch batch;
-	Texture background;
-	Texture[] birds;
-	Texture[] tubes;
+	private SpriteBatch batch;
+	private Texture background;
+	private Texture[] birds;
+	private Texture[] tubes;
 
-	int flapState = 0;
+	private int flapState = 0;
 	
 	@Override
 	public void create () {
@@ -29,7 +29,7 @@ public class FlappyBird extends ApplicationAdapter {
 
 	@Override
 	public void render () {
-
+		
 		if(flapState == 0) {
 			flapState = 1;
 		} else {
